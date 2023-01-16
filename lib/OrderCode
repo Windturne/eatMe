@@ -1,0 +1,60 @@
+TABEL ORDER (status_order)
+0: didalam cart
+1: konsumen order dari "checkout" langsung (tanpa add to cart)
+2: berhasil checkout (add nota baru)
+
+---
+
+TABEL NOTA (status_nota)
+0: menunggu tanggapan bisnis kuliner
+1: pesanan diterima dan menunggu untuk diambil
+-1 : pesanan ditolak
+2: pesanan selesai, makanan sudah diambil
+
+---
+
+TABEL NOTA (status_komplain)
+0: tidak ada komplain
+1: komplain masuk tapi belum diproses (admin only, di user ttp tulisannya dalam proses)
+11: komplain masuk sedang diproses
+2: komplain selesai
+
+---
+
+TABEL TRANSAKSI_EWALLET (tipe_transaksi)
+
+- topup
+- pembelian
+
+---
+
+TABEL TRANSAKSI_EWALLET (status_topup)
+0: dalam proses
+1: berhasil di top-up
+
+---
+
+TABEL FORM_KOMPLAIN (sender)
+
+- user
+- bisnis
+
+---
+
+TABEL FORM_VALIDASI (validasi_admin)
+0: dalam proses
+1: tervalidasi
+\*\*Note: tidak jadi ada status ditolak karena nanti interaksi selanjutnya melalui email, sehingga ketika ditolak status tetap 'dalam proses' dan direvisi kalau user bersedia.
+kalau user tidak bersedia, form dihapus
+
+---
+
+TABEL PENDAPATAN (status_transfer)
+0: dana belum ditransfer oleh admin
+1: dana sudah ditransfer oleh admin
+
+<!-- TABEL BISNIS_KULINER (status_validasi)
+0 : belum submit form
+1 : menunggu kabar dari admin
+2 : diterima
+-1 : validasi ditolak -->
