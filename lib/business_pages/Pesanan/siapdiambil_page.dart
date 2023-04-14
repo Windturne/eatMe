@@ -100,6 +100,7 @@ class _SiapDiambilPageState extends State<SiapDiambilPage> {
                   PinCodeFields(
                     length: 5,
                     controller: pinController,
+                    onComplete: (String value) {},
                   )
                 ],
               ),
