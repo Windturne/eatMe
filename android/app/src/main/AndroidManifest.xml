@@ -7,7 +7,7 @@
     <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
    <application
    android:usesCleartextTraffic="true"
-        android:name="io.flutter.app.FlutterApplication"
+        android:name="${applicationName}"
         android:label="eatMe!"
         android:icon="@mipmap/ic_launcher">
         

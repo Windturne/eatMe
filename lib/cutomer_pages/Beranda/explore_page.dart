@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 import 'package:eatme_mobileapp/theme.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:badges/badges.dart';
+import 'package:badges/badges.dart' as badges;
 import 'package:http/http.dart' as http;
 
 class ExplorePage extends StatefulWidget {
@@ -174,7 +174,7 @@ class _ExplorePageState extends State<ExplorePage> {
                     Spacer(),
                     GestureDetector(
                       onTap: () => cartPressed(),
-                      child: Badge(
+                      child: badges.Badge(
                         badgeContent: Text(
                           cartLength.toString(),
                           style: TextStyle(color: white),

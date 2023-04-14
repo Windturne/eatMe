@@ -14,7 +14,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intl/intl.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:http/http.dart' as http;
-import 'package:badges/badges.dart';
+import 'package:badges/badges.dart' as badges;
 
 import '../../theme.dart';
 
@@ -228,7 +228,7 @@ class _ExploreDetailPageState extends State<ExploreDetailPage> {
                         children: [
                           GestureDetector(
                             onTap: () => cartPressed(),
-                            child: Badge(
+                            child: badges.Badge(
                               badgeContent: Text(
                                 cartLength.toString(),
                                 style: TextStyle(color: white),

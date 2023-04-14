@@ -165,7 +165,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      builder: () => MaterialApp(
+      builder: (BuildContext context, child) => MaterialApp(
         initialRoute: initialRouteParam,
         // home: LoginPage(),
         routes: <String, WidgetBuilder>{
